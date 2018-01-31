@@ -1,0 +1,245 @@
+﻿@charset "utf-8";
+
+#tree_bg {
+    width: 100%;
+    height: 100%;
+}
+
+.tree_top {
+    background: url(../images/icon_l_tree.png) no-repeat left 20px top 7px #f70;
+    height: 30px;
+}
+
+.tree {
+    margin: 0 auto;
+    width: 290px;
+    background: #FFF;
+    position: relative;
+}
+
+.tree_tit {
+    color: #46484c;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+/* 白色背景盒样式 end*/
+
+/* 导航树一级列表样式 start*/
+.tree_first_stage li {
+    position: relative;
+}
+
+.tree_first_stage {
+    background: #fff;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.tree_first_stage>li>a{
+   display:block;
+   line-height:36px;
+   font-size:15px;
+   font-weight:bold;
+   color:#f60;
+   text-align:left;
+   border-bottom:1px solid #eee;
+   border-top:1px solid #eee;
+   margin-bottom:1px;
+   background:url(../images/sub_nav_icon.png) no-repeat left 10px center #f1f1f1;
+   padding:0 30px;
+   white-space:nowrap;
+   overflow:hidden;
+   text-overflow:ellipsis;
+}
+
+.tree_first_stage .text_c {
+    color: #f70;
+    font-weight: bold;
+    background: url(../images/l_tree_10.png) no-repeat right 60px bottom;
+}
+
+/* 导航树一级列表样式 end*/
+
+/* 导航树二级列表样式 start*/
+.list_tree {}
+
+.block_tree {
+    display: block;
+}
+
+.tree_first_stage .li_list {
+    background: none;
+}
+
+.tree_first_stage .li_list .active {
+    /*background:url(../images/icon16_1.png) no-repeat left 20px center #eaeff3;*/
+    border-left: 1px solid #f60;
+    color: #f60;
+}
+
+.list_tree .text_list {
+    display: block;
+    text-align: left;
+    line-height: 36px;
+    font-size: 13px;
+    color: #333;
+
+    /*border-bottom:1px solid #f1f1f1;*/
+    padding: 0 0 0 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list_tree .text_list .tit_name {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list_tree .text_list:hover {
+    background: #f5f5f5;
+}
+
+.list_tree .text_list_c {
+    color: #fff;
+    background: #eea85d;
+}
+
+/* 导航树二级列表样式 end*/
+
+.sure_btn {
+    height: 70px;
+    text-align: center;
+    background: url(../images/icon_16.png) no-repeat center center;
+}
+
+.sure_btn a {
+    display: inline-block;
+    width: 44px;
+    text-align: center;
+    padding-top: 36px;
+    background: url(../images/icon__19.png) no-repeat center 18px;
+    font-size: 12px;
+    color: #666;
+    line-height: 31px;
+}
+
+.sure_btn a:hover {
+    color: #333;
+}
+
+/* CSS Document */
+.tit_name {
+    float: left;
+    max-width: 190px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.list_nub{
+   float:right;
+   margin-right:15px;
+   padding:2px 3px;
+   border-radius:3px;
+/* background:#c1ae90;*/
+   line-height:13px;
+   color:#333;
+   margin-top:10px;
+}
+.active .list_nub{
+   background:#f60;
+   color:#fff;
+}
+
+.nav_page {
+    width: 242px;
+    margin-left: 29px;
+    line-height: 36px;
+    height: 36px;
+}
+
+.page_prev {
+    float: left;
+}
+
+.page_next {
+    float: right;
+}
+
+.page_nub {
+    margin-left: 73px;
+    float: left;
+}
+
+.nav_page a {
+    color: #555;
+    font-size: 11px;
+}
+
+.nav_page a:active {
+    color: #f60;
+}
+
+.Current {
+    color: #f60;
+}
+
+.l_sub_nav {
+    /* display: none; */
+}
+/*学科分类 资源类型 start*/
+.qxqk{
+	float:right;
+	color:#333;
+	margin-right:10px;
+}
+.li_list div{
+	height:30px;
+}
+.qxqk:active{
+	color:#942930;
+}
+.noicon_03nav .click_li{
+	margin-left:32px;
+}
+.nav_02>li,.nav_03>li,.click_li{
+	line-height:36px;
+}
+.click_li{
+	line-height:30px;
+	display:block;
+	padding:0 !important;
+}
+.icon_oc{
+	float:left;
+	display:block;
+	width:32px;
+	height:30px;
+	background:url(../images/+icon_03.jpg) no-repeat 14px center;
+}
+.no_oc_02{
+	padding-left:32px !important;
+}
+.no_oc_01{
+	padding-left:33px !important;
+}
+.nav_03 .click_li,.nav_03 .click_li:hover{
+	background:none !important;
+}
+.click_li input{
+	margin-right:3px;
+	vertical-align: middle;
+}
+.nav_03 .click_li{
+	padding-left:27px !important;
+}
+.nav_02{
+	padding-left:20px;
+}
+.nav_03{
+	margin-left:20px;
+}
+/*学科分类 资源类型 end*/

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.suqc.dao.SubjectDao">
+   <resultMap type="com.suqc.pojo.Subject" id="Subject">
+      <result property="id" column="subject_id" />
+      <result property="num" column="subject_num" />
+      <result property="name" column="subject_name" />
+      <result property="parentId" column="parent_id" />
+   </resultMap>
+
+   <select id="query" resultMap="Subject">
+      select * from subject
+   </select>
+</mapper>
