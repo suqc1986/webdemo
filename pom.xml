@@ -39,13 +39,19 @@
     <quartz.version>2.2.2</quartz.version>
     <fastjson.version>1.2.25</fastjson.version>
     <jmail.version>1.5.6</jmail.version>
+    <solrj.version>4.10.4</solrj.version>
   </properties>
 
   <dependencies>
     <dependency>
+      <groupId>org.apache.solr</groupId>
+      <artifactId>solr-solrj</artifactId>
+      <version>${solrj.version}</version>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
     <!-- fastjson -->
@@ -183,6 +189,11 @@
       <artifactId>commons-fileupload</artifactId>
       <version>${commons-fileupload.version}</version>
     </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+    </dependency>
 
   </dependencies>
   <build>
@@ -227,5 +238,14 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.xml</include>
+        </includes>
+        <filtering>false</filtering>
+      </resource>
+    </resources>
   </build>
 </project>

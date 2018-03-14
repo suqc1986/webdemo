@@ -58,7 +58,7 @@
 
   <!-- springmvc -->
   <servlet>
-    <servlet-name>webdemo</servlet-name>
+    <servlet-name>springmvc</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <!-- contextConfigLocation不是必须的， 如果不配置contextConfigLocation， springmvc的配置文件默认在：WEB-INF/servlet的name+"-servlet.xml" -->
    <!--
@@ -75,17 +75,17 @@
   </servlet>
   <!-- 拦截所有请求jsp除外 -->
   <servlet-mapping>
-    <servlet-name>webdemo</servlet-name>
+    <servlet-name>springmvc</servlet-name>
     <url-pattern>*.shtml</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>
-    <servlet-name>webdemo</servlet-name>
+    <servlet-name>springmvc</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
   <!-- 默认首页设置-->
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.shtml</welcome-file>
     <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>default.html</welcome-file>

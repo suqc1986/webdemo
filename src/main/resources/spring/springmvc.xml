@@ -23,7 +23,8 @@
     <!-- 配置资源映射 -->
     <mvc:resources location="/static/css/" mapping="/css/**"></mvc:resources>
     <mvc:resources location="/static/js/" mapping="/js/**"></mvc:resources>
-    <mvc:resources location="/static/images/" mapping="/images/**"></mvc:resources>
+    <mvc:resources location="/static/image/" mapping="/images/**"></mvc:resources>
+    <mvc:resources location="/static/ztree/" mapping="/ztree/**"></mvc:resources>
 
     <!-- 配置文件上传解析器 -->  
     <bean id="multipartResolver"  

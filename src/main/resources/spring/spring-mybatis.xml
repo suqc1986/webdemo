@@ -48,9 +48,9 @@
    <!-- MyBatis begin -->
    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
       <property name="dataSource" ref="dataSource"/>
-      <property name="typeAliasesPackage" value="org.cnki.kspace.content"/>
+      <property name="typeAliasesPackage" value="com.suqc.pojo"/>
       <property name="configLocation" value="classpath:spring/mybatis-config.xml"></property>
-      <property name="mapperLocations" value="classpath*:com/suqc/mapper/*.xml"/>
+      <property name="mapperLocations" value="classpath*:com/suqc/mapper/*Mapper.xml"/>
    </bean>
 
    <!-- transactionManager -->
@@ -62,8 +62,8 @@
 
    <!-- @MyBatisRepository note interface-->
    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-      <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
-      <property name="basePackage" value="com.suqc.dao"/>
+      <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+      <property name="basePackage" value="com.suqc"/>
       <property name="annotationClass" value="com.suqc.dao.MyBatisDao"/>
    </bean>
 </beans>

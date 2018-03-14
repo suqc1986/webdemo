@@ -3,7 +3,6 @@ package com.suqc.pojo;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-@Component(value = "name")
 public class User {
     private Integer id;
     private String name;
