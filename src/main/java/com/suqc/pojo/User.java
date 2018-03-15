@@ -3,6 +3,7 @@ package com.suqc.pojo;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+
 public class User {
     private Integer id;
     private String name;
@@ -10,9 +11,11 @@ public class User {
 
     public User() {
     }
-    public User(Integer id,String name){
-        this(id,name,null);
+
+    public User(Integer id, String name) {
+        this(id, name, null);
     }
+
     public User(Integer id, String name, List<String> adds) {
         this.id = id;
         this.name = name;

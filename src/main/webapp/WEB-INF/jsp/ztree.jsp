@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="./include/taglib.jsp"%>
+<%@include file="./include/taglib.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,10 +24,10 @@
                 autoParam: ["id"]
             },
             // 回调函数
-            callback : {
-                onClick : function(event, treeId, treeNode, clickFlag) {
+            callback: {
+                onClick: function (event, treeId, treeNode, clickFlag) {
                     // 判断是否父节点
-                    if(!treeNode.isParent){
+                    if (!treeNode.isParent) {
                         alert("treeId自动编号：" + treeNode.tId + ", 节点id是：" + treeNode.id + ", 节点文本是：" + treeNode.name);
                     }
                 }

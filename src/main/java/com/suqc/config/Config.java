@@ -10,8 +10,8 @@ import org.springframework.core.env.Environment;
 @Configuration
 //添加自动扫描注解，basePackages为TestBean包路径
 //@ComponentScan(basePackages = "com.suqc.config")
-@ImportResource(value = {"classpath:spring/spring-*.xml","classpath:spring/springmvc.xml"})
-public class Config implements EnvironmentAware{
+@ImportResource(value = {"classpath:spring/spring-*.xml", "classpath:spring/springmvc.xml"})
+public class Config implements EnvironmentAware {
     private Environment env;
 
     @Override
@@ -19,12 +19,13 @@ public class Config implements EnvironmentAware{
         this.env = environment;
     }
 
-    public Config(){
+    public Config() {
         System.out.println("TestConfiguration容器启动初始化...");
     }
-    @Bean(name = "testBean",initMethod = "init",destroyMethod = "destory")
+
+    @Bean(name = "testBean", initMethod = "init", destroyMethod = "destory")
     @Scope("prototype")
-    public TestBean testBean(){
+    public TestBean testBean() {
         return new TestBean();
     }
 }

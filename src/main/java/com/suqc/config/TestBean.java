@@ -7,15 +7,19 @@ public class TestBean {
     private String username;
     private String url;
     private String password;
-    public void sayHello(){
+
+    public void sayHello() {
         System.out.println("testBean sayHello ...");
     }
-    public void init(){
+
+    public void init() {
         System.out.println("init......");
     }
-    public void destory(){
+
+    public void destory() {
         System.out.println("destory.....");
     }
+
     @Override
     public String toString() {
         return "TestBean{" +

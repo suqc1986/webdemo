@@ -13,7 +13,7 @@ import java.util.List;
 public class JsonController {
     @RequestMapping("/getJsonString")
     @ResponseBody
-    public User getJsonString(){
+    public User getJsonString() {
         User u = createUser();
         return u;
     }
@@ -22,7 +22,7 @@ public class JsonController {
         List<String> adds = new ArrayList<>();
         adds.add("中国北京");
         adds.add("中国大庆");
-        User u = new User( 123,"zhangsan",adds);
+        User u = new User(123, "zhangsan", adds);
         return u;
     }
 

@@ -6,7 +6,7 @@ import com.suqc.pojo.ParamData;
 import java.util.List;
 
 public class TestJson3 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         String jsonStr = "[{\"group\":\"主体\",\"params\":[{\"k\":\"品牌\",\"v\":\"苹果\"}," +
                 "{\"k\":\"型号\",\"v\":\"无\"},{\"k\":\"颜色\",\"v\":\"白色\"}," +
                 "{\"k\":\"上市年份\",\"v\":\"无\"},{\"k\":\"上市月份\",\"v\":\"无\"}," +

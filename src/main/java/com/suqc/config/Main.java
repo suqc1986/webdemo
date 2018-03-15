@@ -3,7 +3,7 @@ package com.suqc.config;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // @Configuration注解的spring容器加载方式，用AnnotationConfigApplicationContext替换ClassPathXmlApplicationContext
 //        初始化方法一
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
