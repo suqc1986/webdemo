@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.suqc.dao.DictCityDao">
+        <resultMap id="DictCity" type="com.suqc.pojo.DictCity">
+        <result column="id" property="id"/>
+        <result column="province_code" property="provinceCode"/>
+        <result column="city_name" property="cityName"/>
+    </resultMap>
+
+    <select id="queryByGroup" resultType="java.util.HashMap">
+        SELECT province_code as code , COUNT(1) as cnt
+        FROM t_dict_cities
+        GROUP BY province_code
+    </select>
+
+</mapper>
