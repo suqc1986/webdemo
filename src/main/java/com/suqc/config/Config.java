@@ -23,9 +23,9 @@ public class Config implements EnvironmentAware {
         System.out.println("TestConfiguration容器启动初始化...");
     }
 
-    @Bean(name = "testBean", initMethod = "init", destroyMethod = "destory")
+    @Bean(name = "contextInit", initMethod = "init", destroyMethod = "destory")
     @Scope("prototype")
-    public TestBean testBean() {
-        return new TestBean();
+    public ContextInit testBean() {
+        return new ContextInit();
     }
 }

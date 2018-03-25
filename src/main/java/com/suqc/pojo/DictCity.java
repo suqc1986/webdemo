@@ -1,6 +1,8 @@
 package com.suqc.pojo;
 
-public class DictCity {
+import java.io.Serializable;
+
+public class DictCity implements Serializable{
     private Integer id;
     private String provinceCode;
     private String cityCode;

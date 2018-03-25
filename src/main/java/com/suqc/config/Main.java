@@ -14,12 +14,9 @@ public class Main {
         // ApplicationContext context = new
         // ClassPathXmlApplicationContext("spring-context.xml");
 
-        TestBean tb = (TestBean) context.getBean("testBean");
-        tb.sayHello();
+        ContextInit ta = (ContextInit) context.getBean("contextInit");
+        System.out.println(ta);
+        ContextInit tb = (ContextInit) context.getBean("contextInit");
         System.out.println(tb);
-
-        TestBean tb2 = (TestBean) context.getBean("testBean");
-        tb2.sayHello();
-        System.out.println(tb2);
     }
 }
