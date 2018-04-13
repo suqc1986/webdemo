@@ -7,5 +7,5 @@ import java.util.List;
 import java.util.Map;
 @MyBatisDao
 public interface DictCityDao extends  MyBatisBaseDao<DictCity>{
-    public List<Map<String,Object>> queryByGroup();
+    public List<Map<String,Long>> queryByGroup();
 }

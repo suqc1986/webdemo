@@ -19,7 +19,7 @@ public class DictCityService {
         return dictCityDao.query(null);
     }
 
-    public List<Map<String,Object>> getDictMap(){
+    public List<Map<String,Long>> getDictMap(){
         System.out.println("===== 获取DictCity信息 getDictMap()=====");
         return dictCityDao.queryByGroup();
     }

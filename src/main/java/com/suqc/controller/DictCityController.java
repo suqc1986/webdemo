@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
+@RequestMapping("/dict")
 public class DictCityController {
     @Resource(name = "dictCityService")
     DictCityService dictCityService;
@@ -28,10 +29,10 @@ public class DictCityController {
 
     @RequestMapping("/getCityGroup")
     @ResponseBody
-    public List<Map<String,Object>> getDictCityGroup(HttpServletRequest request){
-        List<Map<String,Object>> list = dictCityService.getDictMap();
-        for(Map<String,Object> map:list){
-            System.out.println(map.get("code")+"-->"+Integer.parseInt(map.get("cnt").toString()));
+    public List<Map<String,Long>> getDictCityGroup(HttpServletRequest request){
+        List<Map<String,Long>> list = dictCityService.getDictMap();
+        for(Map<String,Long> map:list){
+            System.out.println(map.get("code")+"-->"+map.get("cnt"));
         }
         return list;
     }
